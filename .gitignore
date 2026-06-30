@@ -13,3 +13,8 @@ npm-debug.log*
 lighthouse-report.*
 dist/
 .netlify/
+
+# local dev artifacts (screenshots / scratch scripts)
+shot.cjs
+shot-*.png
+package-lock.json
