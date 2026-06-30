@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- TODO: replace ignacioviola.com with the final domain when set -->
+<!-- Update these URLs if a custom domain is added later -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ignacioviola.com/</loc><lastmod>2026-06-30</lastmod><priority>1.0</priority></url>
-  <url><loc>https://ignacioviola.com/work.html</loc><lastmod>2026-06-30</lastmod><priority>0.9</priority></url>
-  <url><loc>https://ignacioviola.com/nexo-os.html</loc><lastmod>2026-06-30</lastmod><priority>0.8</priority></url>
-  <url><loc>https://ignacioviola.com/agentic-cash-rec.html</loc><lastmod>2026-06-30</lastmod><priority>0.8</priority></url>
-  <url><loc>https://ignacioviola.com/ai-finance-engineering.html</loc><lastmod>2026-06-30</lastmod><priority>0.8</priority></url>
-  <url><loc>https://ignacioviola.com/ngo-foundation.html</loc><lastmod>2026-06-30</lastmod><priority>0.7</priority></url>
-  <url><loc>https://ignacioviola.com/services.html</loc><lastmod>2026-06-30</lastmod><priority>0.7</priority></url>
-  <url><loc>https://ignacioviola.com/about.html</loc><lastmod>2026-06-30</lastmod><priority>0.7</priority></url>
-  <url><loc>https://ignacioviola.com/contact.html</loc><lastmod>2026-06-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://finance-ai-ignacio-viola.netlify.app/</loc><lastmod>2026-06-30</lastmod><priority>1.0</priority></url>
+  <url><loc>https://finance-ai-ignacio-viola.netlify.app/work.html</loc><lastmod>2026-06-30</lastmod><priority>0.9</priority></url>
+  <url><loc>https://finance-ai-ignacio-viola.netlify.app/nexo-os.html</loc><lastmod>2026-06-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://finance-ai-ignacio-viola.netlify.app/agentic-cash-rec.html</loc><lastmod>2026-06-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://finance-ai-ignacio-viola.netlify.app/ai-finance-engineering.html</loc><lastmod>2026-06-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://finance-ai-ignacio-viola.netlify.app/ngo-foundation.html</loc><lastmod>2026-06-30</lastmod><priority>0.7</priority></url>
+  <url><loc>https://finance-ai-ignacio-viola.netlify.app/services.html</loc><lastmod>2026-06-30</lastmod><priority>0.7</priority></url>
+  <url><loc>https://finance-ai-ignacio-viola.netlify.app/about.html</loc><lastmod>2026-06-30</lastmod><priority>0.7</priority></url>
+  <url><loc>https://finance-ai-ignacio-viola.netlify.app/contact.html</loc><lastmod>2026-06-30</lastmod><priority>0.6</priority></url>
 </urlset>
