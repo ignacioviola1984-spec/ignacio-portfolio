@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://finance-ai-ignacio-viola.netlify.app/sitemap.xml
+Sitemap: https://ignacioviola.com/sitemap.xml
