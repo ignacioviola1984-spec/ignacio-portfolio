@@ -1,0 +1,15 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Node (if tooling is added later)
+node_modules/
+npm-debug.log*
+
+# Build / reports
+lighthouse-report.*
+dist/
+.netlify/
