@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NGO Finance-AI model — Salesforce + NetSuite · Ignacio Viola</title>
+<title>NGO Finance-AI model, Salesforce + NetSuite · Ignacio Viola</title>
 <meta name="description" content="A pro-bono Finance-AI model for an Argentine NGO: a read-only layer over Salesforce and NetSuite with cross-system reconciliation, PII segregation and two-level human sign-off.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0b0c0e">
@@ -12,7 +12,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Ignacio Viola">
-<meta property="og:title" content="NGO Finance-AI model — Salesforce + NetSuite">
+<meta property="og:title" content="NGO Finance-AI model, Salesforce + NetSuite">
 <meta property="og:description" content="Read-only Finance-AI over Salesforce and NetSuite with cross-system reconciliation, PII segregation and two-level sign-off. Pro-bono.">
 <meta property="og:url" content="https://finance-ai-ignacio-viola.netlify.app/ngo-foundation.html">
 <meta property="og:image" content="https://finance-ai-ignacio-viola.netlify.app/imgs/og.jpg">
@@ -55,8 +55,8 @@
       <p class="label label--accent"><span class="en">Finance-AI for an NGO · Pro-bono</span><span class="es">Finance-AI para una ONG · Pro-bono</span></p>
       <h1><span class="en">NGO Finance-AI model</span><span class="es">Modelo Finance-AI para ONG</span></h1>
       <p class="lead">
-        <span class="en">A read-only Finance-AI layer over Salesforce and NetSuite for an Argentine NGO: it reconciles donor records against the general ledger, supports month-end close, cash forecasting and board reporting — with PII kept segregated and two human sign-offs before anything is published.</span>
-        <span class="es">Una capa Finance-AI read-only sobre Salesforce y NetSuite para una ONG argentina: concilia registros de donantes contra el libro mayor, soporta cierre de mes, forecast de caja y reporting al board — con la PII segregada y dos firmas humanas antes de publicar nada.</span>
+        <span class="en">A read-only Finance-AI layer over Salesforce and NetSuite for an Argentine NGO: it reconciles donor records against the general ledger, supports month-end close, cash forecasting and board reporting, with PII kept segregated and two human sign-offs before anything is published.</span>
+        <span class="es">Una capa Finance-AI read-only sobre Salesforce y NetSuite para una ONG argentina: concilia registros de donantes contra el libro mayor, soporta cierre de mes, forecast de caja y reporting al board, con la PII segregada y dos firmas humanas antes de publicar nada.</span>
       </p>
       <div class="case-actions">
         <a class="btn btn--solid" href="https://github.com/ignacioviola1984-spec/argentine-ngo-foundation/tree/main" target="_blank" rel="noopener">Repo ↗</a>
@@ -73,23 +73,23 @@
 
       <section class="prose" data-reveal>
         <h2><span class="en">The problem</span><span class="es">El problema</span></h2>
-        <p><span class="en">Argentine NGOs rarely have integrated financial workflows connecting fundraising and accounting. Manual reconciliation between donor records and GL entries is slow and risky — and it can block the monthly close and the reporting that boards and donors depend on.</span><span class="es">Las ONG argentinas rara vez tienen flujos financieros integrados entre recaudación y contabilidad. La conciliación manual entre registros de donantes y asientos del mayor es lenta y riesgosa — y puede bloquear el cierre mensual y el reporting del que dependen el board y los donantes.</span></p>
+        <p><span class="en">Argentine NGOs rarely have integrated financial workflows connecting fundraising and accounting. Manual reconciliation between donor records and GL entries is slow and risky, and it can block the monthly close and the reporting that boards and donors depend on.</span><span class="es">Las ONG argentinas rara vez tienen flujos financieros integrados entre recaudación y contabilidad. La conciliación manual entre registros de donantes y asientos del mayor es lenta y riesgosa, y puede bloquear el cierre mensual y el reporting del que dependen el board y los donantes.</span></p>
       </section>
 
       <section class="prose" data-reveal>
         <h2><span class="en">The approach</span><span class="es">El enfoque</span></h2>
-        <p><span class="en">An agentic workflow across five stages — data diagnostics, monthly close, cash forecasting, executive reporting and dashboards — with a strict split: <strong>code computes the numbers; the model only writes the narrative.</strong></span><span class="es">Un flujo agéntico en cinco etapas — diagnóstico de datos, cierre mensual, forecast de caja, reporting ejecutivo y dashboards — con una división estricta: <strong>el código calcula los números; el modelo solo redacta.</strong></span></p>
+        <p><span class="en">An agentic workflow across five stages, data diagnostics, monthly close, cash forecasting, executive reporting and dashboards, with a strict split: <strong>code computes the numbers; the model only writes the narrative.</strong></span><span class="es">Un flujo agéntico en cinco etapas, diagnóstico de datos, cierre mensual, forecast de caja, reporting ejecutivo y dashboards, con una división estricta: <strong>el código calcula los números; el modelo solo redacta.</strong></span></p>
         <ul>
           <li><span class="en"><strong>Read-only connectors</strong> bridge two disconnected systems: Salesforce (fundraising / donors) and NetSuite (GL accounting).</span><span class="es"><strong>Conectores read-only</strong> unen dos sistemas desconectados: Salesforce (recaudación / donantes) y NetSuite (contabilidad del mayor).</span></li>
           <li><span class="en"><strong>Cross-system reconciliation</strong> matches donation recognition in Salesforce against posted GL income in NetSuite; mismatches fail-closed and block publication until resolved.</span><span class="es"><strong>Conciliación cross-system</strong> matchea el reconocimiento de donaciones en Salesforce contra el ingreso posteado en NetSuite; las diferencias hacen fail-closed y bloquean la publicación hasta resolverse.</span></li>
-          <li><span class="en"><strong>PII segregation</strong> — donor personal data lives only in the Salesforce connector and never enters shared state; the LLM layer guards against invented figures or names.</span><span class="es"><strong>Segregación de PII</strong> — los datos personales de donantes viven solo en el conector de Salesforce y nunca entran al estado compartido; la capa LLM bloquea cifras o nombres inventados.</span></li>
-          <li><span class="en"><strong>Two-level sign-off</strong> — per-stage approval plus a final publication gate before stakeholder delivery.</span><span class="es"><strong>Sign-off de dos niveles</strong> — aprobación por etapa más una compuerta final de publicación antes de la entrega.</span></li>
+          <li><span class="en"><strong>PII segregation</strong>, donor personal data lives only in the Salesforce connector and never enters shared state; the LLM layer guards against invented figures or names.</span><span class="es"><strong>Segregación de PII</strong>, los datos personales de donantes viven solo en el conector de Salesforce y nunca entran al estado compartido; la capa LLM bloquea cifras o nombres inventados.</span></li>
+          <li><span class="en"><strong>Two-level sign-off</strong>, per-stage approval plus a final publication gate before stakeholder delivery.</span><span class="es"><strong>Sign-off de dos niveles</strong>, aprobación por etapa más una compuerta final de publicación antes de la entrega.</span></li>
         </ul>
       </section>
 
       <div class="callout" data-reveal>
         <p class="label"><span class="en">Status &amp; scale</span><span class="es">Estado y escala</span></p>
-        <p class="big"><span class="en">First live deployment underway — the same pattern is designed to scale to more organizations without duplicating code.</span><span class="es">Primer despliegue en marcha — el mismo patrón está diseñado para escalar a más organizaciones sin duplicar código.</span></p>
+        <p class="big"><span class="en">First live deployment underway, the same pattern is designed to scale to more organizations without duplicating code.</span><span class="es">Primer despliegue en marcha, el mismo patrón está diseñado para escalar a más organizaciones sin duplicar código.</span></p>
       </div>
 
       <nav class="pager section" aria-label="More work">
@@ -109,7 +109,7 @@
       <a href="work.html"><span class="en">Work</span><span class="es">Trabajo</span></a>
       <a href="contact.html"><span class="en">Contact</span><span class="es">Contacto</span></a>
     </nav>
-    <div class="footer-meta">© 2026 Ignacio Viola — Buenos Aires, Argentina</div>
+    <div class="footer-meta">© 2026 Ignacio Viola, Buenos Aires, Argentina</div>
   </div>
 </footer>
 

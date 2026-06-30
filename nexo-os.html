@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nexo OS — AI operating model for an insurance brokerage · Ignacio Viola</title>
+<title>Nexo OS, AI operating model for an insurance brokerage · Ignacio Viola</title>
 <meta name="description" content="Nexo OS: an AI operating model for a LATAM insurance brokerage. Ten specialist agents over a deterministic financial core, with an approval inbox and a hash-chained audit trail. In production.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0b0c0e">
@@ -12,7 +12,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Ignacio Viola">
-<meta property="og:title" content="Nexo OS — AI operating model for an insurance brokerage">
+<meta property="og:title" content="Nexo OS, AI operating model for an insurance brokerage">
 <meta property="og:description" content="Ten specialist agents over a deterministic financial core, with an approval inbox and a hash-chained audit trail. In production.">
 <meta property="og:url" content="https://finance-ai-ignacio-viola.netlify.app/nexo-os.html">
 <meta property="og:image" content="https://finance-ai-ignacio-viola.netlify.app/imgs/og.jpg">
@@ -55,8 +55,8 @@
       <p class="label label--accent"><span class="en">AI operating model · Insurance brokerage</span><span class="es">Modelo operativo de IA · Broker de seguros</span></p>
       <h1>Nexo OS</h1>
       <p class="lead">
-        <span class="en">An AI operating model for an Argentine insurance brokerage: ten specialist agents that read the business, compute its state deterministically, surface what needs attention, and propose actions — with a human approving every one.</span>
-        <span class="es">Un modelo operativo de IA para un broker de seguros argentino: diez agentes especialistas que leen el negocio, calculan su estado de forma determinista, muestran qué necesita atención y proponen acciones — con un humano aprobando cada una.</span>
+        <span class="en">An AI operating model for an Argentine insurance brokerage: ten specialist agents that read the business, compute its state deterministically, surface what needs attention, and propose actions, with a human approving every one.</span>
+        <span class="es">Un modelo operativo de IA para un broker de seguros argentino: diez agentes especialistas que leen el negocio, calculan su estado de forma determinista, muestran qué necesita atención y proponen acciones, con un humano aprobando cada una.</span>
       </p>
       <div class="case-actions">
         <a class="btn btn--solid" href="https://nexo-os-demo.streamlit.app/" target="_blank" rel="noopener"><span class="en">Live demo ↗</span><span class="es">Demo en vivo ↗</span></a>
@@ -67,7 +67,7 @@
     <div class="wrap">
       <figure class="case-figure" data-reveal>
         <img src="imgs/demo-nexo.webp" width="2049" height="1281" loading="lazy" decoding="async" alt="Nexo OS dashboard: ten specialist agents, deterministic core and a human-in-the-loop approval inbox.">
-        <figcaption><span class="en">Live demo — the Nexo OS dashboard.</span><span class="es">Demo en vivo — el tablero de Nexo OS.</span></figcaption>
+        <figcaption><span class="en">Live demo, the Nexo OS dashboard.</span><span class="es">Demo en vivo, el tablero de Nexo OS.</span></figcaption>
       </figure>
       <dl class="case-meta" data-reveal>
         <div><dt><span class="en">Client</span><span class="es">Cliente</span></dt><dd><span class="en">Insurance brokerage · paid engagement</span><span class="es">Broker de seguros · cliente pago</span></dd></div>
@@ -78,7 +78,7 @@
 
       <section class="prose" data-reveal>
         <h2><span class="en">The problem</span><span class="es">El problema</span></h2>
-        <p><span class="en">A brokerage needed to monitor operations deterministically, surface issues that required attention, and propose next actions — while keeping human oversight and regulatory compliance over PII-sensitive financial data. Spreadsheets and manual review didn't scale, and a black-box AI that invents figures was a non-starter in a regulated, money-moving context.</span><span class="es">Un broker necesitaba monitorear las operaciones de forma determinista, detectar lo que requería atención y proponer próximas acciones — manteniendo supervisión humana y cumplimiento regulatorio sobre datos financieros con PII. Las planillas y la revisión manual no escalaban, y una IA caja-negra que inventa cifras no era opción en un contexto regulado y con dinero en juego.</span></p>
+        <p><span class="en">A brokerage needed to monitor operations deterministically, surface issues that required attention, and propose next actions, while keeping human oversight and regulatory compliance over PII-sensitive financial data. Spreadsheets and manual review didn't scale, and a black-box AI that invents figures was a non-starter in a regulated, money-moving context.</span><span class="es">Un broker necesitaba monitorear las operaciones de forma determinista, detectar lo que requería atención y proponer próximas acciones, manteniendo supervisión humana y cumplimiento regulatorio sobre datos financieros con PII. Las planillas y la revisión manual no escalaban, y una IA caja-negra que inventa cifras no era opción en un contexto regulado y con dinero en juego.</span></p>
       </section>
 
       <section class="prose" data-reveal>
@@ -89,7 +89,7 @@
           <li><span class="en"><strong>Approval gate.</strong> Agents propose actions; a human approves before anything is recorded.</span><span class="es"><strong>Compuerta de aprobación.</strong> Los agentes proponen acciones; un humano aprueba antes de registrar nada.</span></li>
           <li><span class="en"><strong>Fail-closed.</strong> Missing data or low confidence triggers a stop, never a guess.</span><span class="es"><strong>Fail-closed.</strong> Datos faltantes o baja confianza activan un freno, nunca una suposición.</span></li>
         </ul>
-        <p><span class="en">A pluggable data backend (<strong>NexoRepository</strong>) cleanly isolates production from the public synthetic demo — the same code path runs against DuckDB, BigQuery, or GCS.</span><span class="es">Un backend de datos enchufable (<strong>NexoRepository</strong>) aísla producción del demo sintético público — el mismo código corre contra DuckDB, BigQuery o GCS.</span></p>
+        <p><span class="en">A pluggable data backend (<strong>NexoRepository</strong>) cleanly isolates production from the public synthetic demo, the same code path runs against DuckDB, BigQuery, or GCS.</span><span class="es">Un backend de datos enchufable (<strong>NexoRepository</strong>) aísla producción del demo sintético público, el mismo código corre contra DuckDB, BigQuery o GCS.</span></p>
       </section>
 
       <section class="prose" data-reveal>
@@ -97,15 +97,15 @@
         <ul>
           <li><span class="en"><strong>Ten specialist agents</strong> across retention, collections, delinquency, renewals, portfolio, conversion, pipeline, product profitability and commissions.</span><span class="es"><strong>Diez agentes especialistas</strong> en retención, cobranzas, mora, renovaciones, cartera, conversión, pipeline, rentabilidad de producto y comisiones.</span></li>
           <li><span class="en"><strong>Deterministic core</strong> for metrics and reconciliation.</span><span class="es"><strong>Núcleo determinista</strong> para métricas y conciliación.</span></li>
-          <li><span class="en"><strong>HITL approval inbox</strong> — approve, edit or reject, with immutable recording.</span><span class="es"><strong>Bandeja de aprobación HITL</strong> — aprobar, editar o rechazar, con registro inmutable.</span></li>
+          <li><span class="en"><strong>HITL approval inbox</strong>, approve, edit or reject, with immutable recording.</span><span class="es"><strong>Bandeja de aprobación HITL</strong>, aprobar, editar o rechazar, con registro inmutable.</span></li>
           <li><span class="en"><strong>Hash-chained audit log</strong> and multi-tenant isolation via a hard tenant boundary.</span><span class="es"><strong>Auditoría hash-encadenada</strong> y aislamiento multi-tenant con frontera dura por cliente.</span></li>
-          <li><span class="en"><strong>Disabled execution adapter</strong> — no external side effects without human approval.</span><span class="es"><strong>Adaptador de ejecución deshabilitado</strong> — sin efectos externos sin aprobación humana.</span></li>
+          <li><span class="en"><strong>Disabled execution adapter</strong>, no external side effects without human approval.</span><span class="es"><strong>Adaptador de ejecución deshabilitado</strong>, sin efectos externos sin aprobación humana.</span></li>
         </ul>
       </section>
 
       <div class="callout" data-reveal>
         <p class="label"><span class="en">Outcome</span><span class="es">Resultado</span></p>
-        <p class="big"><span class="en">Deployed in production for the brokerage at Level 2 — propose + human-in-the-loop.</span><span class="es">Desplegado en producción para el broker en Nivel 2 — proponer + human-in-the-loop.</span></p>
+        <p class="big"><span class="en">Deployed in production for the brokerage at Level 2, propose + human-in-the-loop.</span><span class="es">Desplegado en producción para el broker en Nivel 2, proponer + human-in-the-loop.</span></p>
         <p><span class="en">The public repo ships the production-identical codebase over synthetic data, so the architecture and safety model are fully inspectable.</span><span class="es">El repo público incluye el código idéntico al de producción sobre datos sintéticos, así la arquitectura y el modelo de seguridad son completamente inspeccionables.</span></p>
       </div>
 
@@ -126,7 +126,7 @@
       <a href="work.html"><span class="en">Work</span><span class="es">Trabajo</span></a>
       <a href="contact.html"><span class="en">Contact</span><span class="es">Contacto</span></a>
     </nav>
-    <div class="footer-meta">© 2026 Ignacio Viola — Buenos Aires, Argentina</div>
+    <div class="footer-meta">© 2026 Ignacio Viola, Buenos Aires, Argentina</div>
   </div>
 </footer>
 
