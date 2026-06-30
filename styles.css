@@ -243,6 +243,11 @@ a:focus-visible, .btn:focus-visible, .nav a:focus-visible,
 .case-meta dt { font-size: var(--step--1); color: var(--accent); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: var(--space-2); }
 .case-meta dd { font-weight: 600; letter-spacing: -0.01em; }
 
+/* case study figure (demo screenshot) */
+.case-figure { margin: 0 0 var(--space-16); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); }
+.case-figure img { width: 100%; height: auto; display: block; aspect-ratio: 2049 / 1281; object-fit: cover; }
+.case-figure figcaption { font-size: var(--step--1); color: var(--ink-muted); padding: var(--space-3) var(--space-5); border-top: 1px solid var(--line); }
+
 /* rich-text body for case studies */
 .prose { max-width: var(--measure); }
 .prose + .prose { margin-top: var(--space-12); }
