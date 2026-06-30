@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexo OS — AI operating model for an insurance brokerage · Ignacio Viola</title>
+<meta name="description" content="Nexo OS: an AI operating model for a LATAM insurance brokerage. Ten specialist agents over a deterministic financial core, with an approval inbox and a hash-chained audit trail. In production.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b0c0e">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="canonical" href="https://ignacioviola.com/nexo-os.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ignacio Viola">
+<meta property="og:title" content="Nexo OS — AI operating model for an insurance brokerage">
+<meta property="og:description" content="Ten specialist agents over a deterministic financial core, with an approval inbox and a hash-chained audit trail. In production.">
+<meta property="og:url" content="https://ignacioviola.com/nexo-os.html">
+<meta property="og:image" content="https://ignacioviola.com/imgs/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="site.js" defer></script>
+</head>
+
+<body class="lang-en" id="top">
+<a class="skip-link" href="#main"><span class="en">Skip to content</span><span class="es">Saltar al contenido</span></a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Ignacio Viola</a>
+    <div class="header-right">
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="work.html" aria-current="page"><span class="en">Work</span><span class="es">Trabajo</span></a>
+        <a href="services.html"><span class="en">Services</span><span class="es">Servicios</span></a>
+        <a href="about.html"><span class="en">About</span><span class="es">Sobre mí</span></a>
+        <a href="contact.html"><span class="en">Contact</span><span class="es">Contacto</span></a>
+      </nav>
+      <button class="lang-toggle" id="langBtn" type="button" onclick="toggleLang()">ES</button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav" onclick="toggleNav()" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap breadcrumb">
+    <a href="work.html"><span class="en">Work</span><span class="es">Trabajo</span></a><span class="sep">/</span><span>Nexo OS</span>
+  </div>
+
+  <article>
+    <header class="case-hero wrap" data-reveal>
+      <p class="label label--accent"><span class="en">AI operating model · Insurance brokerage</span><span class="es">Modelo operativo de IA · Broker de seguros</span></p>
+      <h1>Nexo OS</h1>
+      <p class="lead">
+        <span class="en">An AI operating model for an Argentine insurance brokerage: ten specialist agents that read the business, compute its state deterministically, surface what needs attention, and propose actions — with a human approving every one.</span>
+        <span class="es">Un modelo operativo de IA para un broker de seguros argentino: diez agentes especialistas que leen el negocio, calculan su estado de forma determinista, muestran qué necesita atención y proponen acciones — con un humano aprobando cada una.</span>
+      </p>
+      <div class="case-actions">
+        <a class="btn btn--solid" href="https://nexo-os-demo.streamlit.app/" target="_blank" rel="noopener"><span class="en">Live demo ↗</span><span class="es">Demo en vivo ↗</span></a>
+        <a class="btn" href="https://github.com/ignacioviola1984-spec/nexo-os/blob/main/README.md" target="_blank" rel="noopener">Repo ↗</a>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <dl class="case-meta" data-reveal>
+        <div><dt><span class="en">Client</span><span class="es">Cliente</span></dt><dd><span class="en">Insurance brokerage · paid engagement</span><span class="es">Broker de seguros · cliente pago</span></dd></div>
+        <div><dt><span class="en">Role</span><span class="es">Rol</span></dt><dd><span class="en">Design, build, deploy</span><span class="es">Diseño, build, deploy</span></dd></div>
+        <div><dt>Stack</dt><dd>Python · Claude · BigQuery · Streamlit</dd></div>
+        <div><dt><span class="en">Status</span><span class="es">Estado</span></dt><dd><span class="en">In production</span><span class="es">En producción</span></dd></div>
+      </dl>
+
+      <section class="prose" data-reveal>
+        <h2><span class="en">The problem</span><span class="es">El problema</span></h2>
+        <p><span class="en">A brokerage needed to monitor operations deterministically, surface issues that required attention, and propose next actions — while keeping human oversight and regulatory compliance over PII-sensitive financial data. Spreadsheets and manual review didn't scale, and a black-box AI that invents figures was a non-starter in a regulated, money-moving context.</span><span class="es">Un broker necesitaba monitorear las operaciones de forma determinista, detectar lo que requería atención y proponer próximas acciones — manteniendo supervisión humana y cumplimiento regulatorio sobre datos financieros con PII. Las planillas y la revisión manual no escalaban, y una IA caja-negra que inventa cifras no era opción en un contexto regulado y con dinero en juego.</span></p>
+      </section>
+
+      <section class="prose" data-reveal>
+        <h2><span class="en">The approach</span><span class="es">El enfoque</span></h2>
+        <p><span class="en">A human-in-the-loop operating model built on three principles:</span><span class="es">Un modelo operativo human-in-the-loop sobre tres principios:</span></p>
+        <ul>
+          <li><span class="en"><strong>Deterministic computation.</strong> Every number is computed in code and traceable to its inputs. The language models route and prioritize, but never estimate or invent figures.</span><span class="es"><strong>Cómputo determinista.</strong> Cada número se calcula en código y es trazable a sus inputs. Los modelos rutean y priorizan, pero nunca estiman ni inventan cifras.</span></li>
+          <li><span class="en"><strong>Approval gate.</strong> Agents propose actions; a human approves before anything is recorded.</span><span class="es"><strong>Compuerta de aprobación.</strong> Los agentes proponen acciones; un humano aprueba antes de registrar nada.</span></li>
+          <li><span class="en"><strong>Fail-closed.</strong> Missing data or low confidence triggers a stop, never a guess.</span><span class="es"><strong>Fail-closed.</strong> Datos faltantes o baja confianza activan un freno, nunca una suposición.</span></li>
+        </ul>
+        <p><span class="en">A pluggable data backend (<strong>NexoRepository</strong>) cleanly isolates production from the public synthetic demo — the same code path runs against DuckDB, BigQuery, or GCS.</span><span class="es">Un backend de datos enchufable (<strong>NexoRepository</strong>) aísla producción del demo sintético público — el mismo código corre contra DuckDB, BigQuery o GCS.</span></p>
+      </section>
+
+      <section class="prose" data-reveal>
+        <h2><span class="en">Architecture</span><span class="es">Arquitectura</span></h2>
+        <ul>
+          <li><span class="en"><strong>Ten specialist agents</strong> across retention, collections, delinquency, renewals, portfolio, conversion, pipeline, product profitability and commissions.</span><span class="es"><strong>Diez agentes especialistas</strong> en retención, cobranzas, mora, renovaciones, cartera, conversión, pipeline, rentabilidad de producto y comisiones.</span></li>
+          <li><span class="en"><strong>Deterministic core</strong> for metrics and reconciliation.</span><span class="es"><strong>Núcleo determinista</strong> para métricas y conciliación.</span></li>
+          <li><span class="en"><strong>HITL approval inbox</strong> — approve, edit or reject, with immutable recording.</span><span class="es"><strong>Bandeja de aprobación HITL</strong> — aprobar, editar o rechazar, con registro inmutable.</span></li>
+          <li><span class="en"><strong>Hash-chained audit log</strong> and multi-tenant isolation via a hard tenant boundary.</span><span class="es"><strong>Auditoría hash-encadenada</strong> y aislamiento multi-tenant con frontera dura por cliente.</span></li>
+          <li><span class="en"><strong>Disabled execution adapter</strong> — no external side effects without human approval.</span><span class="es"><strong>Adaptador de ejecución deshabilitado</strong> — sin efectos externos sin aprobación humana.</span></li>
+        </ul>
+      </section>
+
+      <div class="callout" data-reveal>
+        <p class="label"><span class="en">Outcome</span><span class="es">Resultado</span></p>
+        <p class="big"><span class="en">Deployed in production for the brokerage at Level 2 — propose + human-in-the-loop.</span><span class="es">Desplegado en producción para el broker en Nivel 2 — proponer + human-in-the-loop.</span></p>
+        <p><span class="en">The public repo ships the production-identical codebase over synthetic data, so the architecture and safety model are fully inspectable.</span><span class="es">El repo público incluye el código idéntico al de producción sobre datos sintéticos, así la arquitectura y el modelo de seguridad son completamente inspeccionables.</span></p>
+      </div>
+
+      <nav class="pager section" aria-label="More work">
+        <a href="work.html"><span class="pager-dir"><span class="en">Back to</span><span class="es">Volver a</span></span><span class="pager-title"><span class="en">All work</span><span class="es">Todo el trabajo</span></span></a>
+        <a class="next" href="agentic-cash-rec.html"><span class="pager-dir"><span class="en">Next</span><span class="es">Siguiente</span></span><span class="pager-title">Agentic Cash Rec →</span></a>
+      </nav>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="mailto:ignacioviola1984@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/ignacioviola" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/ignacioviola1984-spec" target="_blank" rel="noopener">GitHub</a>
+      <a href="work.html"><span class="en">Work</span><span class="es">Trabajo</span></a>
+      <a href="contact.html"><span class="en">Contact</span><span class="es">Contacto</span></a>
+    </nav>
+    <div class="footer-meta">© 2026 Ignacio Viola — Buenos Aires, Argentina</div>
+  </div>
+</footer>
+
+</body>
+</html>

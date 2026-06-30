@@ -4,20 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ignacio Viola — Finance-AI Builder</title>
-<meta name="description" content="Ignacio Viola — Finance-AI Builder. 17 years in finance (FP&A and finance operations), now building multi-agent systems that automate the finance back office. Buenos Aires, Argentina. Remote.">
+<meta name="description" content="Ignacio Viola designs, builds and deploys multi-agent systems for finance operations — close, cash, reconciliation, reporting — with deterministic numbers, human approval on every action, and a full audit trail. 17 years in FP&A and finance ops. ex-J.P. Morgan, dLocal, Ualá.">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0c0d10">
-<!-- mark JS available so reveal-on-scroll only hides content when it can also reveal it (no-JS = full content) -->
+<meta name="theme-color" content="#0b0c0e">
 <script>document.documentElement.classList.add('js');</script>
-<!-- TODO: confirm final domain before launch -->
+<!-- TODO: confirm final domain before launch (placeholder ignacioviola.com) -->
 <link rel="canonical" href="https://ignacioviola.com/">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-<!-- Open Graph / LinkedIn share -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ignacio Viola">
 <meta property="og:title" content="Ignacio Viola — Finance-AI Builder">
-<meta property="og:description" content="Agentic workflows for finance operations. 17 years in finance, now building multi-agent systems that automate the finance back office.">
+<meta property="og:description" content="Multi-agent systems for finance operations. Deterministic numbers, human-in-the-loop, full audit trail. ex-J.P. Morgan, dLocal, Ualá.">
 <meta property="og:url" content="https://ignacioviola.com/">
 <!-- TODO: add real 1200x630 share image at imgs/og.jpg -->
 <meta property="og:image" content="https://ignacioviola.com/imgs/og.jpg">
@@ -25,7 +23,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ignacio Viola — Finance-AI Builder">
-<meta name="twitter:description" content="Agentic workflows for finance operations. Multi-agent systems for the finance back office.">
+<meta name="twitter:description" content="Multi-agent systems for finance operations. Deterministic numbers, human-in-the-loop, full audit trail.">
 <meta name="twitter:image" content="https://ignacioviola.com/imgs/og.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +38,7 @@
   "@type": "Person",
   "name": "Ignacio Viola",
   "jobTitle": "Finance-AI Builder",
-  "description": "17 years in finance (FP&A and finance operations), building multi-agent systems that automate the finance back office.",
+  "description": "Designs, builds and deploys multi-agent systems for finance operations with deterministic numbers, human-in-the-loop approval and full audit trails. 17 years in FP&A and finance operations.",
   "address": { "@type": "PostalAddress", "addressLocality": "Buenos Aires", "addressCountry": "AR" },
   "email": "mailto:ignacioviola1984@gmail.com",
   "url": "https://ignacioviola.com/",
@@ -53,264 +51,193 @@
 </head>
 
 <body class="lang-en" id="top">
+<a class="skip-link" href="#main"><span class="en">Skip to content</span><span class="es">Saltar al contenido</span></a>
 
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="#top">Ignacio Viola</a>
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Ignacio Viola</a>
     <div class="header-right">
-      <nav class="nav" aria-label="Primary">
-        <a href="#method"><span class="en">Method</span><span class="es">Método</span></a>
-        <a href="#work"><span class="en">Work</span><span class="es">Trabajo</span></a>
-        <a href="#services"><span class="en">Services</span><span class="es">Servicios</span></a>
-        <a href="#background"><span class="en">Background</span><span class="es">Trayectoria</span></a>
-        <a href="#contact"><span class="en">Contact</span><span class="es">Contacto</span></a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="work.html"><span class="en">Work</span><span class="es">Trabajo</span></a>
+        <a href="services.html"><span class="en">Services</span><span class="es">Servicios</span></a>
+        <a href="about.html"><span class="en">About</span><span class="es">Sobre mí</span></a>
+        <a href="contact.html"><span class="en">Contact</span><span class="es">Contacto</span></a>
       </nav>
-      <button class="lang-toggle" id="langBtn" type="button" onclick="toggleLang()" aria-label="Switch language / Cambiar idioma">ES</button>
+      <button class="lang-toggle" id="langBtn" type="button" onclick="toggleLang()">ES</button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav" onclick="toggleNav()" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
     </div>
   </div>
 </header>
 
-<main>
+<main id="main">
 
-  <!-- (1) HERO — the thesis -->
-  <section class="hero wrap" aria-labelledby="hero-title">
+  <!-- HERO -->
+  <section class="hero wrap" aria-labelledby="hero-title" data-reveal>
     <p class="label">Finance-AI Builder</p>
     <h1 class="display" id="hero-title">
       <span class="en">Agentic workflows for <span class="accent">finance operations.</span></span>
       <span class="es">Flujos de trabajo agénticos para <span class="accent">operaciones financieras.</span></span>
     </h1>
     <p class="hero-sub">
-      <span class="en">17 years in finance (FP&amp;A and finance operations), now building multi-agent systems that automate the finance back office. ex-J.P.&nbsp;Morgan, dLocal, Ualá.</span>
-      <span class="es">17 años en finanzas (FP&amp;A y operaciones financieras), ahora construyo sistemas multiagente que automatizan el back office financiero. ex-J.P.&nbsp;Morgan, dLocal, Ualá.</span>
+      <span class="en">I design, build and deploy multi-agent systems for finance — close, cash, reconciliation, reporting — where every figure is computed deterministically in code, a human approves each action, and there is a full audit trail.</span>
+      <span class="es">Diseño, construyo y despliego sistemas multiagente para finanzas — cierre, caja, conciliación, reporting — donde cada cifra se calcula de forma determinista en código, un humano aprueba cada acción y hay trazabilidad completa.</span>
     </p>
     <p class="hero-meta">
-      <span class="en">Buenos Aires, Argentina · Remote</span>
-      <span class="es">Buenos Aires, Argentina · Remoto</span>
+      <span class="en">17 years in FP&amp;A and finance operations · ex-J.P.&nbsp;Morgan, dLocal, Ualá · Buenos Aires · Remote</span>
+      <span class="es">17 años en FP&amp;A y operaciones financieras · ex-J.P.&nbsp;Morgan, dLocal, Ualá · Buenos Aires · Remoto</span>
     </p>
-    <a class="btn btn--solid" href="#contact"><span class="en">Get in touch →</span><span class="es">Hablemos →</span></a>
-  </section>
-
-  <!-- (2) HOW I WORK — method, above the work -->
-  <section class="section" id="method" aria-labelledby="method-title">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="idx">01</span>
-        <h2 class="section-title" id="method-title"><span class="en">How I work</span><span class="es">Cómo trabajo</span></h2>
-      </div>
-      <div class="method-grid">
-        <article class="principle">
-          <h3><span class="en">Validate first</span><span class="es">Validar primero</span></h3>
-          <p>
-            <span class="en">I start from a real problem with a real user, not from the tech. Phase&nbsp;0 is always understanding the process and cleaning the data.</span>
-            <span class="es">Empiezo por un problema real con un usuario real, no por la tecnología. La Fase&nbsp;0 siempre es entender el proceso y limpiar los datos.</span>
-          </p>
-        </article>
-        <article class="principle">
-          <h3><span class="en">Build fast</span><span class="es">Construir rápido</span></h3>
-          <p>
-            <span class="en">I turn validated problems into working, deployed systems in days, building with Claude Code.</span>
-            <span class="es">Convierto problemas validados en sistemas funcionando y desplegados en días, construyendo con Claude Code.</span>
-          </p>
-        </article>
-        <article class="principle">
-          <h3><span class="en">Human in the loop</span><span class="es">Humano en el loop</span></h3>
-          <p>
-            <span class="en">Every stage requires a subject-matter-expert approval before the flow moves forward. Nothing ships without sign-off.</span>
-            <span class="es">Cada etapa requiere la aprobación de un experto antes de que el flujo avance. Nada se publica sin firma.</span>
-          </p>
-        </article>
-        <article class="principle">
-          <h3><span class="en">Deterministic by design</span><span class="es">Determinista por diseño</span></h3>
-          <p>
-            <span class="en">Numbers come from deterministic code, never invented. If a figure isn't there, the system errors instead of guessing. LLMs handle the narrative, not the math.</span>
-            <span class="es">Los números salen de código determinista, nunca inventados. Si un dato no está, el sistema da error en vez de adivinar. Los LLM manejan la narrativa, no la matemática.</span>
-          </p>
-        </article>
-      </div>
+    <div class="hero-ctas">
+      <a class="btn btn--solid" href="work.html"><span class="en">View work →</span><span class="es">Ver trabajo →</span></a>
+      <a class="btn" href="contact.html"><span class="en">Get in touch</span><span class="es">Hablemos</span></a>
     </div>
   </section>
 
-  <!-- (3) SELECTED WORK -->
-  <section class="section" id="work" aria-labelledby="work-title">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="idx">02</span>
-        <h2 class="section-title" id="work-title"><span class="en">Selected work</span><span class="es">Trabajo selecto</span></h2>
-      </div>
-
-      <div class="work-list">
-
-        <article class="work-card">
-          <div class="work-num">01</div>
-          <div class="work-body">
-            <h3>Nexo OS</h3>
-            <p>
-              <span class="en">A multi-agent finance operating system. A CFO agent orchestrates specialist agents across the finance back office, including an end-to-end order-to-cash flow, each with human-in-the-loop approval and deterministic numbers.</span>
-              <span class="es">Un sistema operativo financiero multiagente. Un agente CFO orquesta agentes especialistas en el back office financiero, incluyendo un flujo order-to-cash de punta a punta, cada uno con aprobación humana en el loop y números deterministas.</span>
-            </p>
-            <div class="work-actions">
-              <a class="btn btn--ghost" href="https://nexo-os-demo.streamlit.app/" target="_blank" rel="noopener"><span class="en">Live demo ↗</span><span class="es">Demo en vivo ↗</span></a>
-              <a class="btn btn--ghost" href="https://github.com/ignacioviola1984-spec/nexo-os" target="_blank" rel="noopener">Repo ↗</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <div class="work-num">02</div>
-          <div class="work-body">
-            <h3><span class="en">Agentic Cash Rec (Notarial)</span><span class="es">Conciliación de caja agéntica (Notarial)</span></h3>
-            <p>
-              <span class="en">Agentic cash reconciliation for a notarial business, controlling cash by case file (expediente).</span>
-              <span class="es">Conciliación de caja agéntica para un negocio notarial, controlando la caja por expediente.</span>
-            </p>
-            <div class="work-actions">
-              <a class="btn btn--ghost" href="https://cash-control-expediente.streamlit.app/" target="_blank" rel="noopener"><span class="en">Live demo ↗</span><span class="es">Demo en vivo ↗</span></a>
-              <a class="btn btn--ghost" href="https://github.com/ignacioviola1984-spec/Agentic-Cash-Rec-for-Notarial-Business" target="_blank" rel="noopener">Repo ↗</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- TODO: confirm whether "CFO Office" is a separate project from Nexo OS. If separate, fill title/line/links below; if it's the same, delete this card. -->
-        <article class="work-card todo-card">
-          <div class="work-num">03</div>
-          <div class="work-body">
-            <h3>CFO Office <span class="todo">Verify</span></h3>
-            <p>[VERIFICAR: ¿"CFO Office" es un proyecto aparte de Nexo OS o es lo mismo? Si es aparte, completar 1–2 líneas de problema/enfoque y los links de demo/repo. Si es lo mismo, borrar esta card.]</p>
-            <div class="work-actions">
-              <a class="btn btn--ghost" href="#" aria-disabled="true">Live demo ↗</a>
-              <a class="btn btn--ghost" href="#" aria-disabled="true">Repo ↗</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
+  <!-- PROOF -->
+  <section class="section wrap" aria-label="Experience" data-reveal>
+    <div class="proof">
+      <span class="label"><span class="en">17 years across</span><span class="es">17 años en</span></span>
+      <span>J.P. Morgan</span><span class="sep">·</span>
+      <span>dLocal</span><span class="sep">·</span>
+      <span>Ualá</span><span class="sep">·</span>
+      <span>Accenture</span><span class="sep">·</span>
+      <span>American Express</span><span class="sep">·</span>
+      <span>IBM</span>
     </div>
   </section>
 
-  <!-- (4) SERVICES — proof first, then the offer -->
-  <section class="section" id="services" aria-labelledby="services-title">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="idx">03</span>
-        <h2 class="section-title" id="services-title"><span class="en">How I can help</span><span class="es">Cómo puedo ayudar</span></h2>
-      </div>
-      <p class="lead services-intro">
-        <span class="en">I help finance teams turn manual, error-prone processes into agentic systems that are fast, auditable, and don't invent numbers.</span>
-        <span class="es">Ayudo a equipos de finanzas a convertir procesos manuales y propensos a errores en sistemas agénticos que son rápidos, auditables y no inventan números.</span>
-      </p>
+  <!-- SELECTED WORK -->
+  <section class="section wrap" id="work" aria-labelledby="work-title" data-reveal>
+    <div class="section-head">
+      <span class="idx">01</span>
+      <h2 class="section-title" id="work-title"><span class="en">Selected work</span><span class="es">Trabajo selecto</span></h2>
+      <a class="section-link" href="work.html"><span class="en">All work →</span><span class="es">Todo el trabajo →</span></a>
+    </div>
 
-      <div class="offer-grid">
-        <article class="offer">
-          <h3><span class="en">Finance process automation</span><span class="es">Automatización de procesos financieros</span></h3>
-          <p>
-            <span class="en">I map a finance process end to end, then design and deploy the agentic workflow that runs it, with human-in-the-loop approvals.</span>
-            <span class="es">Mapeo un proceso financiero de punta a punta, y después diseño y despliego el flujo agéntico que lo ejecuta, con aprobaciones humanas en el loop.</span>
-          </p>
-        </article>
+    <div class="work-grid">
 
-        <article class="offer">
-          <h3><span class="en">Multi-agent systems for the finance back office</span><span class="es">Sistemas multiagente para el back office financiero</span></h3>
-          <p>
-            <span class="en">Order-to-cash, reconciliation, AP/AR, close. Specialist agents orchestrated, deterministic numbers, an audit trail at every step.</span>
-            <span class="es">Order-to-cash, conciliación, AP/AR, cierre. Agentes especialistas orquestados, números deterministas y trazabilidad en cada paso.</span>
-          </p>
-        </article>
+      <a class="card" href="nexo-os.html">
+        <div class="card-top">
+          <span class="card-num">01</span>
+          <span class="card-status is-live"><span class="en">In production</span><span class="es">En producción</span></span>
+        </div>
+        <h3>Nexo OS</h3>
+        <p>
+          <span class="en">AI operating model for a LATAM insurance brokerage. Ten specialist agents over a deterministic financial core, with an approval inbox and a hash-chained audit trail.</span>
+          <span class="es">Modelo operativo de IA para un broker de seguros de LATAM. Diez agentes especialistas sobre un núcleo financiero determinista, con bandeja de aprobación y auditoría hash-encadenada.</span>
+        </p>
+        <div class="tags"><span class="tag">Multi-agent</span><span class="tag">BigQuery</span><span class="tag">Streamlit</span><span class="tag">Paid client</span></div>
+        <span class="card-go"><span class="en">Read case study →</span><span class="es">Ver caso →</span></span>
+      </a>
 
-        <article class="offer">
-          <h3><span class="en">FP&amp;A &amp; reporting automation</span><span class="es">Automatización de FP&amp;A y reporting</span></h3>
-          <p>
-            <span class="en">Replace fragile Excel reporting with deterministic pipelines and BI. Faster close, fewer errors.</span>
-            <span class="es">Reemplazo el reporting frágil en Excel por pipelines deterministas y BI. Cierre más rápido, menos errores.</span>
-          </p>
-        </article>
+      <a class="card" href="agentic-cash-rec.html">
+        <div class="card-top">
+          <span class="card-num">02</span>
+          <span class="card-status is-live"><span class="en">In production</span><span class="es">En producción</span></span>
+        </div>
+        <h3><span class="en">Agentic Cash Rec</span><span class="es">Conciliación de caja agéntica</span></h3>
+        <p>
+          <span class="en">Cash control by case file (expediente) for a notarial firm. A deterministic Python core does the math with Decimal; the AI only classifies, reconciles and explains.</span>
+          <span class="es">Control de caja por expediente para un negocio notarial. Un núcleo en Python determinista hace la matemática con Decimal; la IA solo clasifica, concilia y explica.</span>
+        </p>
+        <div class="tags"><span class="tag">Reconciliation</span><span class="tag">Decimal</span><span class="tag">Audit log</span><span class="tag">Paid client</span></div>
+        <span class="card-go"><span class="en">Read case study →</span><span class="es">Ver caso →</span></span>
+      </a>
 
-        <!-- TODO: 4th offering is optional. Keep it or remove this whole <article> per Ignacio's call. -->
-        <article class="offer todo-card">
-          <h3><span class="en">Advisory</span><span class="es">Asesoría</span> <span class="todo">Optional</span></h3>
-          <p>
-            <span class="en">Help a finance org find where AI actually adds value, and build the first working system.</span>
-            <span class="es">Ayudo a un área de finanzas a encontrar dónde la IA realmente agrega valor, y a construir el primer sistema funcionando.</span>
-          </p>
-        </article>
-      </div>
+      <a class="card" href="ai-finance-engineering.html">
+        <div class="card-top">
+          <span class="card-num">03</span>
+          <span class="card-status"><span class="en">Reference build</span><span class="es">Build de referencia</span></span>
+        </div>
+        <h3>AI Finance Engineering</h3>
+        <p>
+          <span class="en">A multi-agent CFO office with maker-checker sign-off and an independent audit agent. Statement-level math ties 17 of 17 figures to dLocal's (NASDAQ: DLO) public filings.</span>
+          <span class="es">Una oficina del CFO multiagente con sign-off maker-checker y un agente de auditoría independiente. La matemática a nivel de estados ata 17 de 17 cifras a los reportes públicos de dLocal (NASDAQ: DLO).</span>
+        </p>
+        <div class="tags"><span class="tag">CFO office</span><span class="tag">MCP</span><span class="tag">IFRS</span><span class="tag">17/17 verified</span></div>
+        <span class="card-go"><span class="en">Read case study →</span><span class="es">Ver caso →</span></span>
+      </a>
 
-      <div class="section-cta">
-        <a class="btn btn--solid" href="mailto:ignacioviola1984@gmail.com?subject=My%20process">
-          <span class="en">Tell me about your process →</span><span class="es">Contame sobre tu proceso →</span>
-        </a>
-      </div>
+      <a class="card" href="ngo-foundation.html">
+        <div class="card-top">
+          <span class="card-num">04</span>
+          <span class="card-status"><span class="en">In implementation · pro-bono</span><span class="es">En implementación · pro-bono</span></span>
+        </div>
+        <h3><span class="en">NGO Finance-AI model</span><span class="es">Modelo Finance-AI para ONG</span></h3>
+        <p>
+          <span class="en">Read-only Finance-AI over Salesforce and NetSuite for an Argentine NGO, with cross-system reconciliation, PII segregation and two-level human sign-off.</span>
+          <span class="es">Finance-AI read-only sobre Salesforce y NetSuite para una ONG argentina, con conciliación cross-system, segregación de PII y sign-off humano de dos niveles.</span>
+        </p>
+        <div class="tags"><span class="tag">Salesforce</span><span class="tag">NetSuite</span><span class="tag">PII</span><span class="tag">Pro-bono</span></div>
+        <span class="card-go"><span class="en">Read case study →</span><span class="es">Ver caso →</span></span>
+      </a>
+
     </div>
   </section>
 
-  <!-- (5) BACKGROUND -->
-  <section class="section" id="background" aria-labelledby="bg-title">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="idx">04</span>
-        <h2 class="section-title" id="bg-title"><span class="en">Background</span><span class="es">Trayectoria</span></h2>
-      </div>
-
-      <div class="timeline">
-        <div class="role">
-          <div class="org">Accenture<span class="seat">Finance Manager · Accenture Products &amp; Platforms</span></div>
-          <p>
-            <span class="en">FP&amp;A for the proprietary software business: reporting, planning, variance analysis. Migrated 18 Excel reports to Power BI. <span class="todo">Verify time-saving metric</span></span>
-            <span class="es">FP&amp;A del negocio de software propietario: reporting, planning y análisis de variaciones. Migré 18 reportes de Excel a Power BI. <span class="todo">Verify time-saving metric</span></span>
-          </p>
-        </div>
-        <div class="role">
-          <div class="org">dLocal<span class="seat"><span class="en">Administration</span><span class="es">Administración</span></span></div>
-          <p>
-            <span class="en">Built and led the administration operation through hypergrowth: intercompany payments across 40+ legal entities, implemented Monday.com for invoice approval, and stood up the T&amp;E function.</span>
-            <span class="es">Armé y lideré la operación de administración en hipercrecimiento: pagos intercompany entre más de 40 entidades legales, implementé Monday.com para la aprobación de facturas y monté la función de T&amp;E.</span>
-          </p>
-        </div>
-        <div class="role">
-          <div class="org">Ualá<span class="seat"><span class="en">Administration</span><span class="es">Administración</span></span></div>
-          <p>
-            <span class="en">Built the administration area from a single analyst into AP / AR / Tax / Procurement teams. Implemented the J.P. Morgan TMS integrated with SAP Business One.</span>
-            <span class="es">Construí el área de administración desde un único analista hasta los equipos de AP / AR / Impuestos / Compras. Implementé el TMS de J.P. Morgan integrado con SAP Business One.</span>
-          </p>
-        </div>
-        <div class="role">
-          <div class="org">J.P. Morgan<span class="seat">Trade Support Manager</span></div>
-          <p>
-            <span class="en">Trade support manager; led a reporting-improvement project for the Brazil back office.</span>
-            <span class="es">Trade support manager; lideré un proyecto de mejora de reporting para el back office de Brasil.</span>
-          </p>
-        </div>
-        <div class="role">
-          <div class="org"><span class="en">Earlier</span><span class="es">Antes</span><span class="seat"><span class="en">Education</span><span class="es">Formación</span></span></div>
-          <p>
-            <span class="en">IBM and American Express. Universidad Torcuato di Tella.</span>
-            <span class="es">IBM y American Express. Universidad Torcuato di Tella.</span>
-          </p>
-        </div>
-      </div>
-
-      <p class="bg-foot">[VERIFICAR: dejar solo lo que puedas defender — recortar cualquier línea que no quieras sostener en una conversación.] <span class="todo">Review</span></p>
+  <!-- METHOD -->
+  <section class="section wrap" id="method" aria-labelledby="method-title" data-reveal>
+    <div class="section-head">
+      <span class="idx">02</span>
+      <h2 class="section-title" id="method-title"><span class="en">How I work</span><span class="es">Cómo trabajo</span></h2>
+    </div>
+    <div class="grid-2">
+      <article class="principle">
+        <h3><span class="en">Validate first</span><span class="es">Validar primero</span></h3>
+        <p><span class="en">I start from a real problem with a real user, not from the tech. Phase&nbsp;0 is always understanding the process and cleaning the data.</span><span class="es">Empiezo por un problema real con un usuario real, no por la tecnología. La Fase&nbsp;0 siempre es entender el proceso y limpiar los datos.</span></p>
+      </article>
+      <article class="principle">
+        <h3><span class="en">Build fast</span><span class="es">Construir rápido</span></h3>
+        <p><span class="en">I turn validated problems into working, deployed systems in days, building with Claude Code.</span><span class="es">Convierto problemas validados en sistemas funcionando y desplegados en días, construyendo con Claude Code.</span></p>
+      </article>
+      <article class="principle">
+        <h3><span class="en">Human in the loop</span><span class="es">Humano en el loop</span></h3>
+        <p><span class="en">Every stage requires a subject-matter-expert approval before the flow moves forward. Nothing ships without sign-off.</span><span class="es">Cada etapa requiere la aprobación de un experto antes de que el flujo avance. Nada se publica sin firma.</span></p>
+      </article>
+      <article class="principle">
+        <h3><span class="en">Deterministic by design</span><span class="es">Determinista por diseño</span></h3>
+        <p><span class="en">Numbers come from deterministic code, never invented. If a figure isn't there, the system errors instead of guessing. LLMs handle the narrative, not the math.</span><span class="es">Los números salen de código determinista, nunca inventados. Si un dato no está, el sistema da error en vez de adivinar. Los LLM manejan la narrativa, no la matemática.</span></p>
+      </article>
     </div>
   </section>
 
-  <!-- (6) CONTACT -->
-  <section class="section contact" id="contact" aria-labelledby="contact-title">
+  <!-- SERVICES TEASER -->
+  <section class="section wrap" id="services" aria-labelledby="services-title" data-reveal>
+    <div class="section-head">
+      <span class="idx">03</span>
+      <h2 class="section-title" id="services-title"><span class="en">How I can help</span><span class="es">Cómo puedo ayudar</span></h2>
+      <a class="section-link" href="services.html"><span class="en">All services →</span><span class="es">Todos los servicios →</span></a>
+    </div>
+    <p class="lead" style="margin-bottom: var(--space-12)">
+      <span class="en">I help finance teams turn manual, error-prone processes into agentic systems that are fast, auditable, and don't invent numbers.</span>
+      <span class="es">Ayudo a equipos de finanzas a convertir procesos manuales y propensos a errores en sistemas agénticos que son rápidos, auditables y no inventan números.</span>
+    </p>
+    <div class="grid-2">
+      <article class="offer">
+        <h3><span class="en">Finance process automation</span><span class="es">Automatización de procesos financieros</span></h3>
+        <p><span class="en">I map a finance process end to end, then design and deploy the agentic workflow that runs it, with human-in-the-loop approvals.</span><span class="es">Mapeo un proceso financiero de punta a punta, y después diseño y despliego el flujo agéntico que lo ejecuta, con aprobaciones humanas en el loop.</span></p>
+      </article>
+      <article class="offer">
+        <h3><span class="en">Multi-agent systems for the finance back office</span><span class="es">Sistemas multiagente para el back office</span></h3>
+        <p><span class="en">Order-to-cash, reconciliation, AP/AR, close. Specialist agents orchestrated, deterministic numbers, an audit trail at every step.</span><span class="es">Order-to-cash, conciliación, AP/AR, cierre. Agentes especialistas orquestados, números deterministas y trazabilidad en cada paso.</span></p>
+      </article>
+      <article class="offer">
+        <h3><span class="en">FP&amp;A &amp; reporting automation</span><span class="es">Automatización de FP&amp;A y reporting</span></h3>
+        <p><span class="en">Replace fragile Excel reporting with deterministic pipelines and BI. Faster close, fewer errors.</span><span class="es">Reemplazo el reporting frágil en Excel por pipelines deterministas y BI. Cierre más rápido, menos errores.</span></p>
+      </article>
+      <article class="offer">
+        <h3><span class="en">Advisory</span><span class="es">Asesoría</span></h3>
+        <p><span class="en">Help a finance org find where AI actually adds value, and build the first working system.</span><span class="es">Ayudo a un área de finanzas a encontrar dónde la IA realmente agrega valor, y a construir el primer sistema funcionando.</span></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band" data-reveal>
     <div class="wrap">
-      <span class="idx contact-idx">05</span>
-      <h2 id="contact-title"><span class="en">Get in touch.</span><span class="es">Hablemos.</span></h2>
-      <div class="contact-links">
-        <div class="contact-row">
-          <span class="label">Email</span>
-          <a href="mailto:ignacioviola1984@gmail.com">ignacioviola1984@gmail.com</a>
-        </div>
-        <div class="contact-row">
-          <span class="label">LinkedIn</span>
-          <a href="https://www.linkedin.com/in/ignacioviola" target="_blank" rel="noopener">linkedin.com/in/ignacioviola</a>
-        </div>
-        <div class="contact-row">
-          <span class="label">GitHub</span>
-          <a href="https://github.com/ignacioviola1984-spec" target="_blank" rel="noopener">github.com/ignacioviola1984-spec</a>
-        </div>
-      </div>
+      <h2><span class="en">Let's talk about your process.</span><span class="es">Hablemos de tu proceso.</span></h2>
+      <a class="btn btn--solid" href="mailto:ignacioviola1984@gmail.com?subject=My%20process"><span class="en">Tell me about your process →</span><span class="es">Contame sobre tu proceso →</span></a>
     </div>
   </section>
 
@@ -318,8 +245,14 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <span>© 2026 Ignacio Viola — Buenos Aires, Argentina</span>
-    <a href="#top"><span class="en">Back to top ↑</span><span class="es">Volver arriba ↑</span></a>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="mailto:ignacioviola1984@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/ignacioviola" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/ignacioviola1984-spec" target="_blank" rel="noopener">GitHub</a>
+      <a href="work.html"><span class="en">Work</span><span class="es">Trabajo</span></a>
+      <a href="contact.html"><span class="en">Contact</span><span class="es">Contacto</span></a>
+    </nav>
+    <div class="footer-meta">© 2026 Ignacio Viola — Buenos Aires, Argentina</div>
   </div>
 </footer>
 

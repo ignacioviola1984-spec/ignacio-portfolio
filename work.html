@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Finance-AI systems · Ignacio Viola</title>
+<meta name="description" content="Selected Finance-AI systems built and deployed by Ignacio Viola: Nexo OS, Agentic Cash Rec, AI Finance Engineering and a pro-bono NGO Finance-AI model. Deterministic numbers, human-in-the-loop, audit trails.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b0c0e">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="canonical" href="https://ignacioviola.com/work.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ignacio Viola">
+<meta property="og:title" content="Work — Finance-AI systems · Ignacio Viola">
+<meta property="og:description" content="Selected Finance-AI systems: Nexo OS, Agentic Cash Rec, AI Finance Engineering, NGO Finance-AI.">
+<meta property="og:url" content="https://ignacioviola.com/work.html">
+<meta property="og:image" content="https://ignacioviola.com/imgs/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="site.js" defer></script>
+</head>
+
+<body class="lang-en" id="top">
+<a class="skip-link" href="#main"><span class="en">Skip to content</span><span class="es">Saltar al contenido</span></a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Ignacio Viola</a>
+    <div class="header-right">
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="work.html" aria-current="page"><span class="en">Work</span><span class="es">Trabajo</span></a>
+        <a href="services.html"><span class="en">Services</span><span class="es">Servicios</span></a>
+        <a href="about.html"><span class="en">About</span><span class="es">Sobre mí</span></a>
+        <a href="contact.html"><span class="en">Contact</span><span class="es">Contacto</span></a>
+      </nav>
+      <button class="lang-toggle" id="langBtn" type="button" onclick="toggleLang()">ES</button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav" onclick="toggleNav()" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="case-hero wrap" data-reveal>
+    <p class="label label--accent"><span class="en">Selected work</span><span class="es">Trabajo selecto</span></p>
+    <h1 class="display"><span class="en">Systems, not slides.</span><span class="es">Sistemas, no slides.</span></h1>
+    <p class="lead"><span class="en">Each of these is a working, deployed system with deterministic numbers, human-in-the-loop approval and an audit trail. Two are paid client engagements, one is a verified reference build, one is pro-bono.</span><span class="es">Cada uno es un sistema funcionando y desplegado, con números deterministas, aprobación humana en el loop y trazabilidad. Dos son clientes pagos, uno es un build de referencia verificado, uno es pro-bono.</span></p>
+  </section>
+
+  <section class="wrap" style="padding-bottom: var(--section-y)">
+    <div class="work-grid">
+
+      <a class="card" href="nexo-os.html" data-reveal>
+        <div class="card-top"><span class="card-num">01</span><span class="card-status is-live"><span class="en">In production</span><span class="es">En producción</span></span></div>
+        <h3>Nexo OS</h3>
+        <p><span class="en">AI operating model for a LATAM insurance brokerage. Ten specialist agents over a deterministic financial core, with an approval inbox and a hash-chained audit trail.</span><span class="es">Modelo operativo de IA para un broker de seguros de LATAM. Diez agentes especialistas sobre un núcleo financiero determinista, con bandeja de aprobación y auditoría hash-encadenada.</span></p>
+        <div class="tags"><span class="tag">Multi-agent</span><span class="tag">BigQuery</span><span class="tag">Streamlit</span><span class="tag">Paid client</span></div>
+        <span class="card-go"><span class="en">Read case study →</span><span class="es">Ver caso →</span></span>
+      </a>
+
+      <a class="card" href="agentic-cash-rec.html" data-reveal>
+        <div class="card-top"><span class="card-num">02</span><span class="card-status is-live"><span class="en">In production</span><span class="es">En producción</span></span></div>
+        <h3><span class="en">Agentic Cash Rec</span><span class="es">Conciliación de caja agéntica</span></h3>
+        <p><span class="en">Cash control by case file for a notarial firm. A deterministic Python core does the math with Decimal; the AI only classifies, reconciles and explains.</span><span class="es">Control de caja por expediente para un negocio notarial. Un núcleo en Python determinista hace la matemática con Decimal; la IA solo clasifica, concilia y explica.</span></p>
+        <div class="tags"><span class="tag">Reconciliation</span><span class="tag">Decimal</span><span class="tag">Audit log</span><span class="tag">Paid client</span></div>
+        <span class="card-go"><span class="en">Read case study →</span><span class="es">Ver caso →</span></span>
+      </a>
+
+      <a class="card" href="ai-finance-engineering.html" data-reveal>
+        <div class="card-top"><span class="card-num">03</span><span class="card-status"><span class="en">Reference build</span><span class="es">Build de referencia</span></span></div>
+        <h3>AI Finance Engineering</h3>
+        <p><span class="en">A multi-agent CFO office with maker-checker sign-off and an independent audit agent. Statement-level math ties 17 of 17 figures to dLocal's (NASDAQ: DLO) public filings.</span><span class="es">Una oficina del CFO multiagente con sign-off maker-checker y un agente de auditoría independiente. La matemática a nivel de estados ata 17 de 17 cifras a los reportes públicos de dLocal (NASDAQ: DLO).</span></p>
+        <div class="tags"><span class="tag">CFO office</span><span class="tag">MCP</span><span class="tag">IFRS</span><span class="tag">17/17 verified</span></div>
+        <span class="card-go"><span class="en">Read case study →</span><span class="es">Ver caso →</span></span>
+      </a>
+
+      <a class="card" href="ngo-foundation.html" data-reveal>
+        <div class="card-top"><span class="card-num">04</span><span class="card-status"><span class="en">In implementation · pro-bono</span><span class="es">En implementación · pro-bono</span></span></div>
+        <h3><span class="en">NGO Finance-AI model</span><span class="es">Modelo Finance-AI para ONG</span></h3>
+        <p><span class="en">Read-only Finance-AI over Salesforce and NetSuite for an Argentine NGO, with cross-system reconciliation, PII segregation and two-level human sign-off.</span><span class="es">Finance-AI read-only sobre Salesforce y NetSuite para una ONG argentina, con conciliación cross-system, segregación de PII y sign-off humano de dos niveles.</span></p>
+        <div class="tags"><span class="tag">Salesforce</span><span class="tag">NetSuite</span><span class="tag">PII</span><span class="tag">Pro-bono</span></div>
+        <span class="card-go"><span class="en">Read case study →</span><span class="es">Ver caso →</span></span>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="cta-band" data-reveal>
+    <div class="wrap">
+      <h2><span class="en">Have a process worth automating?</span><span class="es">¿Tenés un proceso que valga la pena automatizar?</span></h2>
+      <a class="btn btn--solid" href="contact.html"><span class="en">Get in touch →</span><span class="es">Hablemos →</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="mailto:ignacioviola1984@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/ignacioviola" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/ignacioviola1984-spec" target="_blank" rel="noopener">GitHub</a>
+      <a href="work.html"><span class="en">Work</span><span class="es">Trabajo</span></a>
+      <a href="contact.html"><span class="en">Contact</span><span class="es">Contacto</span></a>
+    </nav>
+    <div class="footer-meta">© 2026 Ignacio Viola — Buenos Aires, Argentina</div>
+  </div>
+</footer>
+
+</body>
+</html>

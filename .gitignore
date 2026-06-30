@@ -14,7 +14,9 @@ lighthouse-report.*
 dist/
 .netlify/
 
-# local dev artifacts (screenshots / scratch scripts)
+# local dev artifacts (screenshots / scratch scripts / lighthouse)
 shot.cjs
 shot-*.png
 package-lock.json
+lh-*.json
+lighthouse-report.*

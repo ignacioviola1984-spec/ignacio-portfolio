@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agentic Cash Rec — cash control by case file · Ignacio Viola</title>
+<meta name="description" content="Agentic Cash Rec: cash control by case file (expediente) for a notarial firm. A deterministic Python core does the math with Decimal; the AI only classifies, reconciles and explains.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b0c0e">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="canonical" href="https://ignacioviola.com/agentic-cash-rec.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ignacio Viola">
+<meta property="og:title" content="Agentic Cash Rec — cash control by case file">
+<meta property="og:description" content="Deterministic Python core with Decimal; the AI only classifies, reconciles and explains. Paid client engagement.">
+<meta property="og:url" content="https://ignacioviola.com/agentic-cash-rec.html">
+<meta property="og:image" content="https://ignacioviola.com/imgs/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="site.js" defer></script>
+</head>
+
+<body class="lang-en" id="top">
+<a class="skip-link" href="#main"><span class="en">Skip to content</span><span class="es">Saltar al contenido</span></a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Ignacio Viola</a>
+    <div class="header-right">
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="work.html" aria-current="page"><span class="en">Work</span><span class="es">Trabajo</span></a>
+        <a href="services.html"><span class="en">Services</span><span class="es">Servicios</span></a>
+        <a href="about.html"><span class="en">About</span><span class="es">Sobre mí</span></a>
+        <a href="contact.html"><span class="en">Contact</span><span class="es">Contacto</span></a>
+      </nav>
+      <button class="lang-toggle" id="langBtn" type="button" onclick="toggleLang()">ES</button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav" onclick="toggleNav()" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap breadcrumb">
+    <a href="work.html"><span class="en">Work</span><span class="es">Trabajo</span></a><span class="sep">/</span><span><span class="en">Agentic Cash Rec</span><span class="es">Conciliación de caja agéntica</span></span>
+  </div>
+
+  <article>
+    <header class="case-hero wrap" data-reveal>
+      <p class="label label--accent"><span class="en">Cash reconciliation · Notarial business</span><span class="es">Conciliación de caja · Negocio notarial</span></p>
+      <h1><span class="en">Agentic Cash Rec</span><span class="es">Conciliación de caja agéntica</span></h1>
+      <p class="lead">
+        <span class="en">Enterprise-grade cash control per legal case (expediente) for a notarial firm. It tracks client advances, recoverable expenses and bank movements, reconciles them, and flags which files are OK, at risk, or blocked — with every amount computed in deterministic Python.</span>
+        <span class="es">Control de caja de nivel enterprise por expediente para un negocio notarial. Sigue anticipos de clientes, gastos recuperables y movimientos bancarios, los concilia y marca qué expedientes están OK, en riesgo o bloqueados — con cada monto calculado en Python determinista.</span>
+      </p>
+      <div class="case-actions">
+        <a class="btn btn--solid" href="https://cash-control-expediente.streamlit.app/" target="_blank" rel="noopener"><span class="en">Live demo ↗</span><span class="es">Demo en vivo ↗</span></a>
+        <a class="btn" href="https://github.com/ignacioviola1984-spec/Agentic-Cash-Rec-for-Notarial-Business" target="_blank" rel="noopener">Repo ↗</a>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <dl class="case-meta" data-reveal>
+        <div><dt><span class="en">Client</span><span class="es">Cliente</span></dt><dd><span class="en">Notarial firm · paid engagement</span><span class="es">Negocio notarial · cliente pago</span></dd></div>
+        <div><dt><span class="en">Role</span><span class="es">Rol</span></dt><dd><span class="en">Design, build, deploy</span><span class="es">Diseño, build, deploy</span></dd></div>
+        <div><dt>Stack</dt><dd>Python · Decimal · SQLite / Turso · Streamlit</dd></div>
+        <div><dt><span class="en">Status</span><span class="es">Estado</span></dt><dd><span class="en">In production</span><span class="es">En producción</span></dd></div>
+      </dl>
+
+      <section class="prose" data-reveal>
+        <h2><span class="en">The problem</span><span class="es">El problema</span></h2>
+        <p><span class="en">A notarial firm needed precise cash management per case: client advances, reimbursable expenses, bank movements and the resulting financial state — with zero tolerance for computational error. In accounting, a number that's "almost right" is wrong.</span><span class="es">Un negocio notarial necesitaba gestión de caja precisa por expediente: anticipos de clientes, gastos reembolsables, movimientos bancarios y el estado financiero resultante — con cero tolerancia al error de cálculo. En contabilidad, un número "casi bien" está mal.</span></p>
+      </section>
+
+      <section class="prose" data-reveal>
+        <h2><span class="en">The approach</span><span class="es">El enfoque</span></h2>
+        <p><span class="en">One rule drives the design: <strong>the LLM never invents numbers.</strong> A deterministic Python core does all financial math with <strong>Decimal</strong> arithmetic; an optional Claude layer only classifies and explains. Concerns are cleanly separated into domain logic (100% testable), persistence, services, and UI.</span><span class="es">Una regla guía el diseño: <strong>el LLM nunca inventa números.</strong> Un núcleo en Python determinista hace toda la matemática financiera con aritmética <strong>Decimal</strong>; una capa opcional de Claude solo clasifica y explica. Las responsabilidades están separadas: lógica de dominio (100% testeable), persistencia, servicios y UI.</span></p>
+      </section>
+
+      <section class="prose" data-reveal>
+        <h2><span class="en">Architecture</span><span class="es">Arquitectura</span></h2>
+        <ul>
+          <li><span class="en"><strong>Domain engine</strong> — per-case balances, status classification (OK / Attention / Risk / Blocked) and reconciliation matching.</span><span class="es"><strong>Motor de dominio</strong> — saldos por expediente, clasificación de estado (OK / Atención / Riesgo / Bloqueado) y matching de conciliación.</span></li>
+          <li><span class="en"><strong>Hash-chained audit log</strong> detecting tampering via sha256(prev_hash + payload).</span><span class="es"><strong>Auditoría hash-encadenada</strong> que detecta manipulación con sha256(prev_hash + payload).</span></li>
+          <li><span class="en"><strong>Flexible ingestion</strong> — CSV/Excel import tolerating Argentine (1.234.567,89) and Anglo number formats.</span><span class="es"><strong>Ingesta flexible</strong> — import CSV/Excel que tolera formatos numéricos argentinos (1.234.567,89) y anglosajones.</span></li>
+          <li><span class="en"><strong>HITL matching</strong> — deterministic reconciliation suggestions (amount anchor + date proximity + text match) requiring human confirmation.</span><span class="es"><strong>Matching HITL</strong> — sugerencias de conciliación deterministas (ancla de monto + proximidad de fecha + match de texto) que requieren confirmación humana.</span></li>
+          <li><span class="en"><strong>Graceful degradation</strong> — the system stays fully operational without an API key, falling back to rule-based analysis.</span><span class="es"><strong>Degradación elegante</strong> — el sistema queda totalmente operativo sin API key, con análisis basado en reglas.</span></li>
+        </ul>
+      </section>
+
+      <div class="callout" data-reveal>
+        <p class="label"><span class="en">Outcome</span><span class="es">Resultado</span></p>
+        <p class="big"><span class="en">Full cash control per expediente, answering eight core questions about every case file.</span><span class="es">Control total de caja por expediente, respondiendo ocho preguntas clave de cada caso.</span></p>
+        <p><span class="en">From funds received and bank movements to pending balance, reconciliation gaps, case state and required reviews — with an immutable audit trail behind every figure.</span><span class="es">Desde fondos recibidos y movimientos bancarios hasta saldo pendiente, brechas de conciliación, estado del caso y revisiones requeridas — con una auditoría inmutable detrás de cada cifra.</span></p>
+      </div>
+
+      <nav class="pager section" aria-label="More work">
+        <a href="nexo-os.html"><span class="pager-dir"><span class="en">Previous</span><span class="es">Anterior</span></span><span class="pager-title">← Nexo OS</span></a>
+        <a class="next" href="ai-finance-engineering.html"><span class="pager-dir"><span class="en">Next</span><span class="es">Siguiente</span></span><span class="pager-title">AI Finance Engineering →</span></a>
+      </nav>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="mailto:ignacioviola1984@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/ignacioviola" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/ignacioviola1984-spec" target="_blank" rel="noopener">GitHub</a>
+      <a href="work.html"><span class="en">Work</span><span class="es">Trabajo</span></a>
+      <a href="contact.html"><span class="en">Contact</span><span class="es">Contacto</span></a>
+    </nav>
+    <div class="footer-meta">© 2026 Ignacio Viola — Buenos Aires, Argentina</div>
+  </div>
+</footer>
+
+</body>
+</html>

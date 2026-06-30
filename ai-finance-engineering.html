@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Finance Engineering — multi-agent CFO office · Ignacio Viola</title>
+<meta name="description" content="AI Finance Engineering: a multi-agent CFO office with maker-checker sign-off and an independent audit agent. Deterministic statement-level math ties 17 of 17 figures to dLocal's (NASDAQ: DLO) public filings.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b0c0e">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="canonical" href="https://ignacioviola.com/ai-finance-engineering.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ignacio Viola">
+<meta property="og:title" content="AI Finance Engineering — multi-agent CFO office">
+<meta property="og:description" content="Maker-checker sign-off, independent audit agent, MCP connector. 17 of 17 figures tie to dLocal's public filings.">
+<meta property="og:url" content="https://ignacioviola.com/ai-finance-engineering.html">
+<meta property="og:image" content="https://ignacioviola.com/imgs/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="site.js" defer></script>
+</head>
+
+<body class="lang-en" id="top">
+<a class="skip-link" href="#main"><span class="en">Skip to content</span><span class="es">Saltar al contenido</span></a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Ignacio Viola</a>
+    <div class="header-right">
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="work.html" aria-current="page"><span class="en">Work</span><span class="es">Trabajo</span></a>
+        <a href="services.html"><span class="en">Services</span><span class="es">Servicios</span></a>
+        <a href="about.html"><span class="en">About</span><span class="es">Sobre mí</span></a>
+        <a href="contact.html"><span class="en">Contact</span><span class="es">Contacto</span></a>
+      </nav>
+      <button class="lang-toggle" id="langBtn" type="button" onclick="toggleLang()">ES</button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav" onclick="toggleNav()" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap breadcrumb">
+    <a href="work.html"><span class="en">Work</span><span class="es">Trabajo</span></a><span class="sep">/</span><span>AI Finance Engineering</span>
+  </div>
+
+  <article>
+    <header class="case-hero wrap" data-reveal>
+      <p class="label label--accent"><span class="en">Multi-agent CFO office · Reference build</span><span class="es">Oficina del CFO multiagente · Build de referencia</span></p>
+      <h1>AI Finance Engineering</h1>
+      <p class="lead">
+        <span class="en">A multi-agent CFO office — Controller, Treasury, Accounting, FP&amp;A and Controls, plus an independent Audit agent — over a shared, auditable state with maker-checker review. The deterministic math is validated against real public filings.</span>
+        <span class="es">Una oficina del CFO multiagente — Controller, Treasury, Contabilidad, FP&amp;A y Controles, más un agente de Auditoría independiente — sobre un estado compartido y auditable con revisión maker-checker. La matemática determinista se valida contra reportes públicos reales.</span>
+      </p>
+      <div class="case-actions">
+        <a class="btn btn--solid" href="https://ignacio-viola-finance-agentic-workflow.streamlit.app/" target="_blank" rel="noopener"><span class="en">Live demo ↗</span><span class="es">Demo en vivo ↗</span></a>
+        <a class="btn" href="https://github.com/ignacioviola1984-spec/ai-finance-engineering" target="_blank" rel="noopener">Repo ↗</a>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <dl class="case-meta" data-reveal>
+        <div><dt><span class="en">Type</span><span class="es">Tipo</span></dt><dd><span class="en">Reference build</span><span class="es">Build de referencia</span></dd></div>
+        <div><dt><span class="en">Role</span><span class="es">Rol</span></dt><dd><span class="en">Architect &amp; build</span><span class="es">Arquitectura y build</span></dd></div>
+        <div><dt>Stack</dt><dd>Python · Anthropic API · MCP · pandas</dd></div>
+        <div><dt><span class="en">Validation</span><span class="es">Validación</span></dt><dd>17 / 17 vs dLocal (DLO)</dd></div>
+      </dl>
+
+      <section class="prose" data-reveal>
+        <h2><span class="en">The problem</span><span class="es">El problema</span></h2>
+        <p><span class="en">Finance operations demand deterministic accuracy: numbers must be correct, auditable and governed. General-purpose AI can't reliably produce financial figures without oversight — so how do you prove an agentic finance system is actually trustworthy?</span><span class="es">Las operaciones financieras exigen precisión determinista: los números deben ser correctos, auditables y gobernados. La IA de propósito general no puede producir cifras financieras confiables sin supervisión — entonces, ¿cómo se demuestra que un sistema financiero agéntico es realmente confiable?</span></p>
+      </section>
+
+      <section class="prose" data-reveal>
+        <h2><span class="en">The approach</span><span class="es">El enfoque</span></h2>
+        <p><span class="en">A <strong>CFO orchestrator</strong> coordinates the month-end close, an order-to-cash control tower, and a self-improvement loop under unified governance — maker-checker sign-off, audit trails and hard reporting gates. The system reads from a canonical data layer that abstracts vendor systems, so ERP sources are swappable.</span><span class="es">Un <strong>orquestador CFO</strong> coordina el cierre de mes, una torre de control order-to-cash y un loop de auto-mejora bajo gobernanza unificada — sign-off maker-checker, auditoría y compuertas duras de reporting. El sistema lee de una capa de datos canónica que abstrae los sistemas vendor, así las fuentes ERP son intercambiables.</span></p>
+        <h3><span class="en">Agents &amp; governance</span><span class="es">Agentes y gobernanza</span></h3>
+        <ul>
+          <li><span class="en">Eight specialist agents: Controller, Treasury, Administration (AR/AP/Tax), Accounting &amp; Reporting, FP&amp;A, Strategic Finance, Internal Controls and an independent <strong>Audit</strong> agent.</span><span class="es">Ocho agentes especialistas: Controller, Treasury, Administración (AR/AP/Impuestos), Contabilidad y Reporting, FP&amp;A, Finanzas Estratégicas, Controles Internos y un agente de <strong>Auditoría</strong> independiente.</span></li>
+          <li><span class="en">Each domain expert signs off first; the CFO gives final consolidated approval. Two agents act as sub-orchestrators — real two-level governance.</span><span class="es">Cada experto de dominio firma primero; el CFO da la aprobación consolidada final. Dos agentes actúan como sub-orquestadores — gobernanza real de dos niveles.</span></li>
+        </ul>
+        <h3><span class="en">MCP connector</span><span class="es">Conector MCP</span></h3>
+        <p><span class="en">A Model Context Protocol server exposes the finance system of a multi-entity SaaS (6 legal entities, 6 currencies) as callable tools: consolidated P&amp;L, balance sheet, AR aging and cash position, with multi-currency consolidation at period-close FX.</span><span class="es">Un servidor Model Context Protocol expone el sistema financiero de un SaaS multi-entidad (6 entidades legales, 6 monedas) como herramientas invocables: P&amp;L consolidado, balance, AR aging y posición de caja, con consolidación multi-moneda al FX de cierre.</span></p>
+      </section>
+
+      <div class="callout" data-reveal>
+        <p class="label"><span class="en">Verified outcome</span><span class="es">Resultado verificado</span></p>
+        <p class="big"><span class="en">17 of 17 figures tie to dLocal's (NASDAQ: DLO) public filings — 17 PASS, 0 FAIL, with no LLM involvement in the math.</span><span class="es">17 de 17 cifras atan a los reportes públicos de dLocal (NASDAQ: DLO) — 17 PASS, 0 FAIL, sin intervención del LLM en la matemática.</span></p>
+        <p><span class="en">Deterministic statement-level math reconciled to reported FY2024/FY2025 consolidated numbers (IFRS, USD).</span><span class="es">Matemática determinista a nivel de estados conciliada con los números consolidados reportados FY2024/FY2025 (IFRS, USD).</span></p>
+      </div>
+
+      <nav class="pager section" aria-label="More work">
+        <a href="agentic-cash-rec.html"><span class="pager-dir"><span class="en">Previous</span><span class="es">Anterior</span></span><span class="pager-title">← <span class="en">Agentic Cash Rec</span><span class="es">Conciliación de caja</span></span></a>
+        <a class="next" href="ngo-foundation.html"><span class="pager-dir"><span class="en">Next</span><span class="es">Siguiente</span></span><span class="pager-title"><span class="en">NGO Finance-AI →</span><span class="es">Finance-AI ONG →</span></span></a>
+      </nav>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="mailto:ignacioviola1984@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/ignacioviola" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/ignacioviola1984-spec" target="_blank" rel="noopener">GitHub</a>
+      <a href="work.html"><span class="en">Work</span><span class="es">Trabajo</span></a>
+      <a href="contact.html"><span class="en">Contact</span><span class="es">Contacto</span></a>
+    </nav>
+    <div class="footer-meta">© 2026 Ignacio Viola — Buenos Aires, Argentina</div>
+  </div>
+</footer>
+
+</body>
+</html>
