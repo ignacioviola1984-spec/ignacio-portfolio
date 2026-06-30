@@ -169,6 +169,24 @@ p { max-width: var(--measure); }
 
 .nav a:hover { color: var(--ink); }
 
+.header-right { display: flex; align-items: center; gap: var(--space-6); }
+
+.lang-toggle {
+  font-family: var(--font);
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  background: none;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 0.35em 0.7em;
+  cursor: pointer;
+  transition: color var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease);
+}
+
+.lang-toggle:hover { color: var(--ink); border-color: var(--ink); }
+
 /* ---------- buttons ---------- */
 .btn {
   display: inline-flex;
@@ -273,6 +291,27 @@ a:focus-visible,
 
 .work-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
 
+/* ---------- services ---------- */
+.services-intro { margin-bottom: var(--space-16); max-width: 60ch; }
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-12) var(--space-16);
+}
+
+.offer { border-top: 1px solid var(--line); padding-top: var(--space-6); }
+
+.offer h3 {
+  font-size: var(--step-1);
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-3);
+}
+
+.offer p { color: var(--ink-muted); max-width: 48ch; }
+
+.section-cta { margin-top: var(--space-16); }
+
 /* ---------- background ---------- */
 .timeline { display: grid; gap: var(--space-8); max-width: 52rem; }
 
@@ -291,6 +330,15 @@ a:focus-visible,
 .bg-foot { margin-top: var(--space-12); color: var(--ink-muted); font-size: var(--step--1); letter-spacing: 0.02em; }
 
 /* ---------- contact ---------- */
+.contact-idx {
+  display: block;
+  color: var(--accent);
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-4);
+}
+
 .contact h2 { font-size: var(--step-4); letter-spacing: -0.03em; margin-bottom: var(--space-8); max-width: 14ch; }
 
 .contact-links { display: grid; gap: var(--space-4); margin-bottom: var(--space-12); }
@@ -377,7 +425,7 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 860px) {
-  .method-grid { grid-template-columns: 1fr; gap: var(--space-8); }
+  .method-grid, .offer-grid { grid-template-columns: 1fr; gap: var(--space-8); }
   .role { grid-template-columns: 1fr; gap: var(--space-2); }
   .role .org .seat { margin-top: 0; }
 }

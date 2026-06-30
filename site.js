@@ -2,25 +2,25 @@
 // Minimal, dependency-free. Reveal-on-scroll + i18n scaffold (EN-only for now).
 
 // ---- i18n scaffold ----------------------------------------------------------
-// The site ships English-only. The mechanism below is kept so a Spanish toggle
-// can be added later WITHOUT reworking anything:
-//   1. add <span class="es">…</span> / <span class="en">…</span> pairs in the HTML
-//   2. add a button:  <button id="langBtn" onclick="toggleLang()">ES</button>
-//   3. uncomment the toggleLang() function below
-// applyLang() already runs on load and persists to localStorage.
+// Bilingual EN/ES. Default English (international audience); choice persists.
+// Content lives as <span class="en">…</span> / <span class="es">…</span> pairs;
+// CSS hides the inactive language. The toggle button label shows the OTHER lang.
 function applyLang(lang) {
   document.body.classList.remove('lang-es', 'lang-en');
   document.body.classList.add('lang-' + lang);
   document.documentElement.lang = lang;
   var btn = document.getElementById('langBtn');
-  if (btn) btn.textContent = lang === 'es' ? 'EN' : 'ES';
+  if (btn) {
+    btn.textContent = lang === 'es' ? 'EN' : 'ES';
+    btn.setAttribute('aria-pressed', lang === 'es' ? 'true' : 'false');
+  }
 }
 
-// function toggleLang() {
-//   var next = document.body.classList.contains('lang-es') ? 'en' : 'es';
-//   applyLang(next);
-//   try { localStorage.setItem('iv-lang', next); } catch (e) {}
-// }
+function toggleLang() {
+  var next = document.body.classList.contains('lang-es') ? 'en' : 'es';
+  applyLang(next);
+  try { localStorage.setItem('iv-lang', next); } catch (e) {}
+}
 
 document.addEventListener('DOMContentLoaded', function () {
   var saved = 'en';

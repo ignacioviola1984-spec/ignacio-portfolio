@@ -1,0 +1,21 @@
+# Netlify config — static site, no build step.
+# This is a NEW, separate Netlify site. It does not touch any other site.
+[build]
+  publish = "."
+  command = ""
+
+# Long-cache the immutable-ish assets; HTML stays revalidated.
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
